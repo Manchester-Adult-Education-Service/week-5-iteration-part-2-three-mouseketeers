@@ -46,8 +46,15 @@
 #     number = number + 1
 #
 # Write your code below:
+#number = 5
+#while number <5:
+#    print("Loop running")
+#    number = number + 1
 
-
+count = 1
+while count <=5:
+    print(count)
+    count = count + 1
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
