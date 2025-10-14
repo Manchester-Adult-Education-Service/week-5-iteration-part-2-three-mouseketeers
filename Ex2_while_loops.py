@@ -85,7 +85,10 @@ while count <=5:
 #     something = input("Type again: ")
 #
 # Write your code below:
-
+word = input("please type a word: ")
+while word != "stop":
+    word = input("please enter another word: ")
+    print("you typed " + word)
 
 # -------------------------------------------
 # SWAP COMPUTERS
