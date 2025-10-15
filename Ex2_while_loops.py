@@ -121,15 +121,12 @@ while word != "stop":
 
 #DomCode
 num = int(input("Please enter a number between 1 and 10: "))
-if num < 1:
-    int(input("Please choose a number between 1 and 10")
-elif num > 10:
-    int(input("Please choose a number between 1 and 10")
-else: 
-    while num != 5:
-        print("That's not the one I was looking for... try again: ")
-    else: 
-        print("Thank you. ")
+
+while num > 10 or num < 1:
+    print("You need to enter a number between 1 & 10. ")
+    num = int(input("Please try again: "))
+
+print("Thank you")
     
 # -------------------------------------------
 # SWAP COMPUTERS
