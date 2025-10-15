@@ -194,7 +194,20 @@ print("lift off!")
 
 # Write your code below:
 
+#DomCode
+count = 0
+usrnme = input("Please enter your username: ")
+print(f"Welcome back, {usrnme}. ")
+corpss = "password123"
+pss = input("Now please enter your password: ")
+while pss != corpss:
+    print("Attempt ", count + 1, ".")
+    count = count + 1
+    input("Please try again: ")
+else:
+    print(f"Access Granted, thank you {usrnme}.")
 
+    
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
