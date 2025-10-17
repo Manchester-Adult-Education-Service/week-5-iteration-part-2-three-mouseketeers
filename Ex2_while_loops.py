@@ -206,9 +206,10 @@ while pss != corpss:
     input("Please try again: ")
 else:
     print(f"Access Granted, thank you {usrnme}.")
-
-    
-# -------------------------------------------
+#
+# Dom If you trigger the false condition it just continously loops even when you enter the      
+# correct password.
+#-------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
 # 1. Save and push this file:
@@ -231,6 +232,9 @@ else:
 #     total = total + num
 
 # Write your code below:
+print()
+print("Extension 3 - Adding numbers together")
+print()
 total = 0
 while total <=100:
     num = int(input("Enter a number "))
@@ -265,6 +269,9 @@ while total <=100:
 # Hint: Use a counter variable to count attempts.
 
 # Write your code below:
+print()
+print("Advanced Task - Number guessing game")
+print()
 count = 0
 sec_num = 95
 guess_num = int(input("Enter a number between 1 and 100: "))
@@ -272,9 +279,9 @@ while sec_num != guess_num:
     if guess_num < sec_num:
         guess_num = int(input("Too low! Guess again: ")) 
         count = count + 1
-        if guess_num > sec_num:
-            guess_num = int(input("Too high Guess again: ")) 
-            count = count + 1
+    elif guess_num > sec_num:
+        guess_num = int(input("Too high Guess again: ")) 
+        count = count + 1
 print(f"You got the number and it took you {count} guesses!")
 
 # -------------------------------------------
