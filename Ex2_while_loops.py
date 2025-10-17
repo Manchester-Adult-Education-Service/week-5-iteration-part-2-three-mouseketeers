@@ -46,8 +46,15 @@
 #     number = number + 1
 #
 # Write your code below:
+#number = 5
+#while number <5:
+#    print("Loop running")
+#    number = number + 1
 
-
+count = 1
+while count <=5:
+    print(count)
+    count = count + 1
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
@@ -78,7 +85,10 @@
 #     something = input("Type again: ")
 #
 # Write your code below:
-
+word = input("please type a word: ")
+while word != "stop":
+    word = input("please enter another word: ")
+    print("you typed " + word)
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -109,7 +119,15 @@
 #
 # Write your code below:
 
+#DomCode
+num = int(input("Please enter a number between 1 and 10: "))
 
+while num > 10 or num < 1:
+    print("You need to enter a number between 1 & 10. ")
+    num = int(input("Please try again: "))
+
+print("Thank you")
+    
 # -------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
@@ -145,6 +163,12 @@
 
 # Write your code below:
 
+#DomCode
+count = 10
+while count >= 0:
+    print(count)
+    count = count - 1
+print("lift off!")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -170,8 +194,22 @@
 
 # Write your code below:
 
-
-# -------------------------------------------
+#DomCode
+count = 0
+usrnme = input("Please enter your username: ")
+print(f"Welcome back, {usrnme}. ")
+corpss = "password123"
+pss = input("Now please enter your password: ")
+while pss != corpss:
+    print("Attempt ", count + 1, ".")
+    count = count + 1
+    input("Please try again: ")
+else:
+    print(f"Access Granted, thank you {usrnme}.")
+#
+# Dom If you trigger the false condition it just continously loops even when you enter the      
+# correct password.
+#-------------------------------------------
 # SWAP COMPUTERS
 # -------------------------------------------
 # 1. Save and push this file:
@@ -194,7 +232,14 @@
 #     total = total + num
 
 # Write your code below:
-
+print()
+print("Extension 3 - Adding numbers together")
+print()
+total = 0
+while total <=100:
+    num = int(input("Enter a number "))
+    total = total + num
+    print(f"Current total: {total}")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -224,7 +269,20 @@
 # Hint: Use a counter variable to count attempts.
 
 # Write your code below:
-
+print()
+print("Advanced Task - Number guessing game")
+print()
+count = 0
+sec_num = 95
+guess_num = int(input("Enter a number between 1 and 100: "))
+while sec_num != guess_num:
+    if guess_num < sec_num:
+        guess_num = int(input("Too low! Guess again: ")) 
+        count = count + 1
+    elif guess_num > sec_num:
+        guess_num = int(input("Too high Guess again: ")) 
+        count = count + 1
+print(f"You got the number and it took you {count} guesses!")
 
 # -------------------------------------------
 # Submitting Your Work
