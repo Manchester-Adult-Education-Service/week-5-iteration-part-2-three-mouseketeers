@@ -231,7 +231,11 @@ else:
 #     total = total + num
 
 # Write your code below:
-
+total = 0
+while total <=100:
+    num = int(input("Enter a number "))
+    total = total + num
+    print(f"Current total: {total}")
 
 # -------------------------------------------
 # SWAP COMPUTERS
@@ -261,7 +265,17 @@ else:
 # Hint: Use a counter variable to count attempts.
 
 # Write your code below:
-
+count = 0
+sec_num = 95
+guess_num = int(input("Enter a number between 1 and 100: "))
+while sec_num != guess_num:
+    if guess_num < sec_num:
+        guess_num = int(input("Too low! Guess again: ")) 
+        count = count + 1
+        if guess_num > sec_num:
+            guess_num = int(input("Too high Guess again: ")) 
+            count = count + 1
+print(f"You got the number and it took you {count} guesses!")
 
 # -------------------------------------------
 # Submitting Your Work
